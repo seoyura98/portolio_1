@@ -186,3 +186,135 @@ header .inner li a:hover .char:after {
   object-fit: cover;
   z-index: 1;
 }
+
+/*container*/
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+/*con01*/
+#con01 {
+  width: 100%;
+  height: 100%;
+  background-color: #F8D5A7;
+}
+
+#con01 .inner {
+  width: 90%;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  padding-top: 5rem;
+  box-sizing: border-box;
+}
+
+#con01 .inner ul li:nth-child(1) img {
+  width: 60px;
+  height: 60px;
+}
+
+/*left*/
+#con01 .inner .left {
+  width: 50%;
+  height: 90%;
+}
+
+#con01 .inner .left ul {
+  background-color: #87b6e2;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#con01 .inner .left ul li:nth-child(1) {
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+
+#con01 .inner .left ul li:nth-child(2) {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#con01 .inner .left ul li:nth-child(2) img {
+  width: 90%;
+  height: 100%;
+}
+
+/*right*/
+#con01 .inner .right {
+  width: 50%;
+  height: 90%;
+}
+
+#con01 .inner .right ul {
+  background-color: #87b6e2;
+  width: 90%;
+  height: calc(90% / 2);
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+#con01 .inner .right ul li:nth-child(1) {
+  display: flex;
+  justify-content: left;
+  padding-left: 2rem;
+  gap: 15rem;
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Bazzi";
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#con01 .inner .right ul li:nth-child(2) {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+/*about*/
+#con01 .inner .right .about {
+  margin-bottom: 5rem;
+}
+
+#con01 .inner .right .about li:nth-child(2) {
+  padding: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+#con01 .inner .right .about li:nth-child(2) p {
+  margin-bottom: 1.2rem;
+}
+
+/*keyword*/
+
+#con01 .inner .right .keyword li:nth-child(2) div {
+  width: 100%;
+  height: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+#con01 .inner .right .keyword li:nth-child(2) div p {
+  width: calc(80% / 2 - 2rem);
+  background-color: #87b6e2;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  border-radius: 20px;
+  color: #4F4F50;
+}
