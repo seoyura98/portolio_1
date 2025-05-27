@@ -25,6 +25,7 @@
 </head>
 
 <body>
+  <!--header-->
   <header>
     <div class="inner">
       <h1>
@@ -35,18 +36,37 @@
           <a href="#con01" data-splitting>About Me</a>
         </li>
         <li>
-          <a href="#con02" data-splitting>Design</a>
+          <a href="#con03" data-splitting>Design</a>
         </li>
         <li>
-          <a href="#con03" data-splitting>Project</a>
+          <a href="#con04" data-splitting>Project</a>
         </li>
         <li>
-          <a href="#con04" data-splitting>Contact</a>
+          <a href="#con05" data-splitting>Contact</a>
         </li>
       </ul>
+      <div class="bar">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+    </div>
+
+    <!--mobile-->
+    <div id="modalBox">
+      <div id="modalContent">
+        <div id="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="modalText">
+          <li><a href="#con01">About Me</a></li>
+          <li><a href="#con03">Design</a></li>
+          <li><a href="#con04">Project</a></li>
+          <li><a href="#con05">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
+  <!--visual-->
   <div id="visual">
     <div class="wrap">
       <div class="text">
@@ -61,9 +81,13 @@
     </div>
   </div>
 
+  <!--container-->
   <div id="container">
+
+    <!--con01-->
     <div id="con01">
       <div class="inner">
+
         <div class="left">
           <ul>
             <li>
@@ -74,28 +98,15 @@
             </li>
           </ul>
         </div>
+
         <div class="right">
           <ul class="about">
             <li>
               <img src="img/icon/cloud_white.svg" alt="구름">
               <p>About Me</p>
             </li>
-            <li>
-              <p>
-                예전부터 손으로 사부작사부작 무언가를 만들어
-                주변사람들에게 선물하는 것을 좋아했습니다.
-              </p>
-
-              <p>
-                저로인해 누군가가 행복함을 느낀다라는 것이 저 자신에게도
-                행복함과 뿌듯함으로 다가왔습니다.
-              </p>
-
-              <p>
-                웹디자인 또한 화면 속에서 디자인을 직접만들고
-                사람들에게 만족감을 줄 수 있다라는 점이
-                비슷하다고 느껴져 자연스럽게 웹디자인에 관심을 갖게 되었습니다.
-              </p>
+            <li class="text_box">
+              <span class="text"></span><span class="blink">|</span>
             </li>
           </ul>
           <ul class="keyword">
