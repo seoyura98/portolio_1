@@ -23,12 +23,27 @@ $(function () {
     function typing() {
         let txt = content[i++];
         text.innerHTML += txt === "\n" ? "<br/>" : txt;
-        if (i > content.length) {
-            text.textContent = "";
-            i = 0;
+        if (i >= content.length) {
+            clearInterval(stop)
         }
     }
-    setInterval(typing, 100)
+    stop = setInterval(typing, 100)
+
+    //con02
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#con02",
+            start: "0% 5%",
+            end: "0% 0%",
+            scrub: 2,
+            markers: true,
+        }
+    })
+        .fromTo(
+            "#con02 .inner", { "clip-path": "inset(60% 60% 60% 60% round 20%)" }, { "clip-path": "inset(0% 0% 0% 0% round 0%)", ease: "none", duration: 10 }
+        )
+
 
     //scroll
     let visual = $("#visual").offset().top;
