@@ -1404,8 +1404,6 @@ body {
     font-style: italic;
   }
 
-
-
 }
 
 
@@ -1922,6 +1920,7 @@ body {
     margin: 0px auto;
     padding-top: 5rem;
     box-sizing: border-box;
+
   }
 
 
@@ -1963,7 +1962,8 @@ body {
   #con03 .swiper {
     width: 100%;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
     box-sizing: border-box;
   }
@@ -1972,19 +1972,21 @@ body {
   #con03 .swiper-wrapper {
     display: flex;
     width: 100%;
+    transform: translateY(-80px);
   }
 
 
   #con03 .swiper-wrapper .swiper-slide {
+    /* background-position: center;
+  background-size: cover; */
     width: 500px;
     height: 530px;
     flex-shrink: 0;
   }
 
   .swiper-slide p {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #87b6e2;
+    font-size: 1.1rem;
+    color: #B2D4F0
   }
 
   .swiper-slide p i {
@@ -2009,8 +2011,6 @@ body {
     transform: translate(-50%, -50%);
     opacity: 0;
     color: #fff;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
   }
 
   .swiper-slide img {
@@ -2033,7 +2033,7 @@ body {
   }
 
   .swiper-pagination-bullet-active {
-    background-color: #87b6e2;
+    background-color: #B2D4F0;
   }
 
   /*hover*/
@@ -2106,7 +2106,6 @@ body {
   }
 
 
-
   /*con04*/
 
   #con04 {
@@ -2166,7 +2165,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   /*contBox*/
@@ -2223,14 +2222,13 @@ body {
 
   .cloneWarp .contBox .right .txtBox div:first-child {
     display: flex;
-    align-items: center;
     gap: 0.5rem
   }
 
   .cloneWarp .contBox .right .txtBox img {
     width: 50px;
     height: 50px;
-    padding: 0rem 0.4rem;
+    padding: 0rem 0.2rem;
   }
 
   /*more*/
