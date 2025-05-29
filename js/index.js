@@ -89,7 +89,7 @@ $(function () {
                 pin: true,
                 // pinSpacing: false,
                 pinSpacing: i === 2 ? true : false,
-                markers: true,
+                // markers: true,
             }
         })
     });
