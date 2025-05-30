@@ -2278,7 +2278,7 @@ body {
     padding-top: 2rem;
     box-sizing: border-box;
     opacity: 0;
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
   }
 
   #con05 .wrap.on {
