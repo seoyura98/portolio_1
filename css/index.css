@@ -1541,7 +1541,8 @@ body {
     margin-left: 3.5rem;
     font-size: 7.5rem;
     font-family: "Allura", cursive;
-    color: #4f4f50;
+    color: #ccc;
+    font-style: italic;
   }
 
   #visual .wrap .text h2 {
