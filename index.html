@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
+  
   <!--font-->
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
 
@@ -20,6 +21,9 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
   <!--css-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -41,10 +45,13 @@
           <a href="#con03" data-splitting>Design</a>
         </li>
         <li>
-          <a href="#con04" data-splitting>Project</a>
+          <a href="#con04" data-splitting>Web Design</a>
         </li>
         <li>
-          <a href="#con05" data-splitting>Contact</a>
+          <a href="#con05" data-splitting>Project</a>
+        </li>
+        <li>
+          <a href="#con06" data-splitting>Contact</a>
         </li>
       </ul>
       <div class="bar">
@@ -61,8 +68,9 @@
         <ul class="modalText">
           <li><a href="#con01">About Me</a></li>
           <li><a href="#con03">Design</a></li>
-          <li><a href="#con04">Project</a></li>
-          <li><a href="#con05">Contact</a></li>
+          <li><a href="#con04">Web Design</a></li>
+          <li><a href="#con05">Project</a></li>
+          <li><a href="#con06">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -118,12 +126,12 @@
             </li>
             <li>
               <div>
-                <p>#성실함</p>
-                <p>#적극적인 자세</p>
-                <p>#도전정신</p>
-                <p>#긍정적인 마인드</p>
-                <p>#준비된 인재</p>
-                <p>#메모하는 습관</p>
+                <button><span>#성실함</span></button>
+                <button><span>#적극적인 자세</span></button>
+                <button><span>#도전정신</span></button>
+                <button><span>#긍정적인 마인드</span></button>
+                <button><span>#준비된 인재</span></button>
+                <button><span>#메모하는 습관</span></button>
               </div>
             </li>
           </ul>
@@ -227,7 +235,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <p><i class="fa-solid fa-cloud"></i> 삼계탕</p>
+                  <p><i class="fa-solid fa-cloud"></i> 삼계탕 축제</p>
                   <div>
                     <img src="img/design/samgyetang.jpg" alt="삼계탕" />
                     <p>자세히 보기</p>
@@ -289,8 +297,10 @@
       </div>
     </div>
 
-    <!--con04-->
-    <div id="con04">
+    <div id="con04"></div>
+
+    <!--con05-->
+    <div id="con05">
       <section class="story">
         <div class="cloneWarp">
           <div class="project">
@@ -312,7 +322,7 @@
               <div class="txtBox">
                 <div>
                   <p><i class="fa-solid fa-cloud"></i> 사용툴 : </p>
-                  <div>
+                  <div class="imge">
                     <img src="img/icon/vscode.png" alt="vscode">
                     <img src="img/icon/html.svg" alt="html">
                     <img src="img/icon/css.svg" alt="css">
@@ -332,7 +342,7 @@
               </div>
               <ul class="more">
                 <!-- <li><a href="#">기획서</a></li> -->
-                <li><a href="https://seoyura98.github.io/storytaco/">More view</a></li>
+                <li class="btn"><a href="https://seoyura98.github.io/storytaco/">More view</a></li>
               </ul>
             </li>
           </ul>
@@ -360,7 +370,7 @@
               <div class="txtBox">
                 <div>
                   <p><i class="fa-solid fa-cloud"></i> 사용툴 : </p>
-                  <div>
+                  <div class="imge">
                     <img src="img/icon/vscode.png" alt="vscode">
                     <img src="img/icon/html.svg" alt="html">
                     <img src="img/icon/css.svg" alt="css">
@@ -380,7 +390,7 @@
               </div>
               <ul class="more">
                 <!-- <li><a href="#">기획서</a></li> -->
-                <li><a href="https://seoyura98.github.io/jiyugaoka/">More view</a></li>
+                <li class="btn"><a href="https://seoyura98.github.io/jiyugaoka/">More view</a></li>
               </ul>
             </li>
           </ul>
@@ -408,7 +418,7 @@
               <div class="txtBox">
                 <div>
                   <p><i class="fa-solid fa-cloud"></i> 사용툴 : </p>
-                  <div>
+                  <div class="imge">
                     <img src="img/icon/vscode.png" alt="vscode">
                     <img src="img/icon/html.svg" alt="html">
                     <img src="img/icon/css.svg" alt="css">
@@ -423,12 +433,16 @@
                   <p><i class="fa-solid fa-cloud"></i> 제작기간 : 7일</p>
                 </div>
                 <div>
-                  <p><i class="fa-solid fa-cloud"></i> 참여도 : 25%(축제&행사)</p>
+                  <p><i class="fa-solid fa-cloud"></i> 참여도 : 25% (축제&행사)</p>
                 </div>
               </div>
               <ul class="more">
-                <li><a href="#">기획서</a></li>
-                <li><a href="https://jjangminu.github.io/seoulmates/">More view</a></li>
+                <li class="btn">
+                  <a href="#">기획서</a>
+                </li>
+                <li class="btn">
+                  <a href="https://jjangminu.github.io/seoulmates/">More view</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -436,11 +450,20 @@
       </section>
     </div>
 
-    <!--con05-->
-    <div id="con05">
+    <!--con06-->
+    <div id="con06">
       <div class="wrap">
         <div class="text">
-          <h2><span>T</span>HANK YOU</h2>
+          <h2>
+            <span class="txt_t">T</span>
+            <span>H</span>
+            <span>A</span>
+            <span>N</span>
+            <span>K</span>
+            <span>Y</span>
+            <span>O</span>
+            <span>U</span>
+          </h2>
         </div>
 
         <div class="com">
@@ -462,12 +485,40 @@
               차근차근 배워 성장하는 웹디자이너가 되겠습니다.”
             </p>
           </div>
-
+          
           <div class="infor">
-            <h3>서유라</h3>
-            <h3>youra981219@naver.com</h3>
-            <h3>010-3606-9975</h3>
+            <div class="postit_box post01">
+              <div class="postit_corner"></div>
+              <p class="postit_title">
+                <span><i class="fa-regular fa-user"></i> NAME</span>
+              </p>
+              <div class="postit_content">
+                <p><i class="fa-solid fa-cloud"></i> 서유라</p>
+              </div>
+            </div>
+  
+            <div class="postit_box post02">
+              <div class="postit_corner"></div>
+              <p class="postit_title">
+                <span><i class="fa-regular fa-envelope"></i> E-mail</span>
+              </p>
+              <div class="postit_content">
+                <p><i class="fa-solid fa-cloud"></i> youra981219@naver.com</p>
+              </div>
+            </div>
+  
+            <div class="postit_box post03">
+              <div class="postit_corner"></div>
+              <p class="postit_title">
+                <span><i class="fa-solid fa-phone"></i> Phone</span>
+              </p>
+              <div class="postit_content">
+                <p><i class="fa-solid fa-cloud"></i> 010-3606-9975</p>
+              </div>
+            </div>
           </div>
+          
+
         </div>
       </div>
     </div>

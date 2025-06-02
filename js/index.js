@@ -79,7 +79,7 @@ $(function () {
     });
 
 
-    //con04
+    //con05
     gsap.utils.toArray("section").forEach((section, i) => {
         console.log(i);
         gsap.timeline({
@@ -97,6 +97,8 @@ $(function () {
     //scroll
     let visual = $("#visual").offset().top;
     let con01 = $("#con01").offset().top;
+    let con02 = $("#con02").offset().top;
+    let con03 = $("#con03").offset().top;
 
     console.log(visual, con01);
 
@@ -117,12 +119,17 @@ $(function () {
             $("#con01 .inner .right").addClass("on");
         }
 
+        //con03
+        if (sc >= 2500 && sc < con03) {
+            $("#con03 .inner ul").addClass("on");
+        }
 
-        // con05
-        if (sc >= 7200) {
-            $("#con05 .wrap").addClass("on");
+
+        // con06
+        if (sc >= 7800) {
+            $("#con06 .wrap").addClass("on");
         } else {
-            $("#con05 .wrap").removeClass("on");
+            $("#con06 .wrap").removeClass("on");
         }
     });
 
