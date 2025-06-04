@@ -71,6 +71,9 @@ body {
     top: 0;
   }
 
+  header.in {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 
   header .inner {
     width: 95%;
@@ -1435,6 +1438,9 @@ body {
     top: 0;
   }
 
+  header.in {
+    background-color: #fff;
+  }
 
   header .inner {
     width: 95%;
@@ -1549,7 +1555,7 @@ body {
   #visual .wrap .text h2 {
     font-size: 15rem;
     font-family: "Cafe24Ohsquare";
-    color: #FFEBAD;
+    color: #f8d5a7;
     letter-spacing: 5px;
   }
 
@@ -1609,7 +1615,7 @@ body {
   #con01 {
     width: 100%;
     height: 100%;
-    background-color: #FFEBAD;
+    background-color: #F8D5A7;
   }
 
   #con01 .inner {
@@ -1849,7 +1855,7 @@ body {
   #con02 {
     width: 100%;
     height: 100%;
-    background-color: #FFEBAD;
+    background-color: #f8d5a7;
 
   }
 
@@ -1976,7 +1982,7 @@ body {
   }
 
   #con02 .inner .right ul .about_text .box {
-    background-color: #87b6e2;
+    background-color: #B2D4F0;
     color: #fff;
     border-radius: 25px;
     font-size: 2rem;
@@ -2007,9 +2013,6 @@ body {
     box-sizing: border-box;
   }
 
-
-
-
   #con02 .inner .right ul .about_text .imge {
     width: 100%;
     margin: 0px auto;
@@ -2036,7 +2039,10 @@ body {
   #con03 {
     width: 100%;
     height: 100%;
-    background-color: #ABD9FF;
+    background-image: url(../img/main/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
   }
 
@@ -2239,7 +2245,10 @@ body {
   #con04 {
     width: 100%;
     height: 100%;
-    background-color: #FFEBAD;
+    background-image: url(../img/main/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #con04 .inner {
@@ -2296,9 +2305,11 @@ body {
   /*con05*/
   #con05 {
     width: 100%;
-    background-color: #ABD9FF;
+    background-image: url(../img/main/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
-    position: relative;
   }
 
   section {
@@ -2306,13 +2317,11 @@ body {
     height: 100vh;
     margin: 0px auto;
     color: #222;
-
   }
 
   #con05 .story {
     padding-top: 5rem;
     box-sizing: border-box;
-
   }
 
 
@@ -2445,7 +2454,7 @@ body {
     line-height: 50px;
   }
 
-  /*btn*/
+
   #con05 .btn a {
     display: inline-block;
     position: relative;
@@ -2476,7 +2485,7 @@ body {
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
       7px 7px 20px 0px rgba(0, 0, 0, .1),
       4px 4px 5px 0px rgba(0, 0, 0, .1);
-    background: radial-gradient(circle, #FFEBAD 0%, #87b6e2 100%);
+    background: radial-gradient(circle, #f8d5a7 0%, #87b6e2 100%);
     transition: all 0.3s ease;
   }
 
@@ -2490,98 +2499,10 @@ body {
     height: 100%;
   }
 
-  #con05 .pro {
-    display: inline-block;
-    position: relative;
-    color: #fff;
-    right: 20px;
-    bottom: 20px;
-    width: 100%;
-    height: 100%;
-    background-color: #87b6e2;
-    border-radius: 25px;
-    box-shadow:
-      -1px -1px 20px 0px rgba(255, 255, 255, 1),
-      -4px -4px 5px 0px rgba(255, 255, 255, 1),
-      7px 7px 20px 0px rgba(0, 0, 0, .4),
-      4px 4px 5px 0px rgba(0, 0, 0, .3);
-    z-index: 1;
-    cursor: pointer;
+  #con05 .btn a:active {
+    top: 2px;
   }
 
-  #con05 .pro:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 25px;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-      7px 7px 20px 0px rgba(0, 0, 0, .1),
-      4px 4px 5px 0px rgba(0, 0, 0, .1);
-    background: radial-gradient(circle, #FFEBAD 0%, #87b6e2 100%);
-    transition: all 0.3s ease;
-  }
-
-  #con05 .pro:hover {
-    color: #4F4F50;
-  }
-
-  #con05 .pro:hover:after {
-    top: auto;
-    bottom: 0;
-    height: 100%;
-  }
-
-
-  /*modalBox*/
-  #con05 #modalBox {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    position: fixed;
-    z-index: 10;
-    left: 0%;
-    top: 0%;
-
-  }
-
-  #con05 #modalBox.on {
-    display: flex;
-  }
-
-  /*modalContent*/
-  #con05 #modalContent {
-    background-color: #fff;
-    padding: 1.5rem;
-    width: 80%;
-    height: 100%;
-    overflow-y: scroll;
-    margin: 0px auto;
-    text-align: center;
-  }
-
-  #con05 #xmark {
-    position: absolute;
-    right: 11%;
-    top: 2%;
-    font-size: 3rem;
-    cursor: pointer;
-  }
-
-  #con05 #modalContent h2 {
-    letter-spacing: 2px;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-
-  #con05 #modalContent img {
-    width: 80%
-  }
 
   /*con06*/
   #con06 {
@@ -2614,7 +2535,7 @@ body {
   #con06 .wrap .text span {
     font-size: 8rem;
     font-family: "Cafe24Ohsquare";
-    color: #FFEBAD;
+    color: #f8d5a7;
   }
 
   #con06 .wrap .text h2 .txt_t {
