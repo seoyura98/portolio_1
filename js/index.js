@@ -98,6 +98,13 @@ $(function () {
         })
     });
 
+    $("#con05 .pro").on("click", function () {
+        $("#con05 #modalBox").addClass("on");
+    });
+    $("#con05 #xmark").on("click", function () {
+        $("#con05 #modalBox").removeClass("on");
+    });
+
     //scroll
     let visual = $("#visual").offset().top;
     let con01 = $("#con01").offset().top;
